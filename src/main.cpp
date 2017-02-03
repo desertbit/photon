@@ -18,17 +18,35 @@
 
 #include <QtGui/QGuiApplication>
 #include <QtQml/QQmlApplicationEngine>
+#include <QQmlContext>
 #include <QtWebEngine/qtwebengineglobal.h>
 
+QString getCommandLineUrlArgument()
+{
+    const QStringList args = QCoreApplication::arguments();
+    if (args.count() > 1) {
+        const QString lastArg = args.last();
+        const bool isValidUrl = QUrl::fromUserInput(lastArg).isValid();
+        if (isValidUrl)
+            return lastArg;
+    }
+    return QString();
+}
 
 int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);
     QtWebEngine::initialize();
 
-    QQmlApplicationEngine appEngine;
-    appEngine.load(QUrl("qrc:/ui.qml"));
-    QObject::connect(&appEngine, SIGNAL(quit()), qApp, SLOT(quit()));
+    const QString url = getCommandLineUrlArgument();
+    if (url.isEmpty()) {
+        return 1;
+    }
+
+    QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("destURL", url);
+    engine.load(QUrl("qrc:/ui.qml"));
+    QObject::connect(&engine, SIGNAL(quit()), qApp, SLOT(quit()));
 
     return app.exec();
 }

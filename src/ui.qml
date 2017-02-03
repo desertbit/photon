@@ -13,7 +13,7 @@ Window {
     WebEngineView {
         id: webEngineView
         anchors.fill: parent
-        url: "http://127.0.0.1:8080"
+        url: destURL
         profile: WebEngineProfile {
             storageName: "Default"
         }
