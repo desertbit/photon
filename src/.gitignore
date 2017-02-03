@@ -1,0 +1,5 @@
+.~
+.qmake
+.qmake.stash
+Makefile
+qrc_resources.cpp
