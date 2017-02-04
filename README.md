@@ -36,6 +36,8 @@ usage: ./photon [-fullscreen] [-disableHighDPI] -url <URL>
     -disableHighDPI    disable high DPI scaling
 ```
 
+![Demo Preview](preview.png "Preview")
+
 ## Installation
 
 The Qt libraries are required.

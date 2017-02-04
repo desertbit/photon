@@ -1,6 +1,5 @@
 .~
-.qmake
-.qmake.stash
+.qmake*
 Makefile
 qrc_resources.cpp
 bin/*
