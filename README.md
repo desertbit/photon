@@ -16,11 +16,11 @@ This project is work in progress and more features will be added soon.
 ## Usage
 
 Try it out on the commandline,
-simply start your backend an then pass the URL:
+simply start your backend and then pass the URL:
 
 ```shell
 $ ./photon -url http://localhost:8080
-...
+[INFO] starting photon app. URL: http://localhost:8080
 ```
 
 ## Options
@@ -33,12 +33,14 @@ usage: ./photon [-fullscreen] [-title <title>] [-disableHighDPI] -url <URL>
     -u | -url          supply URL
     -h | -help         print this help
     -t | -title        set window title
+    -width             set window width
+    -height            set window height
     -disableHighDPI    disable high DPI scaling
 ```
 
 ## Preview
 
-This is what a simple google maps example would look like:
+This is what a simple OpenStreetMap example would look like:
 
 ![Demo Preview](preview.png "Preview")
 
@@ -108,3 +110,20 @@ $ export LIBGL_ALWAYS_SOFTWARE = 1
 $ photon -url <URL>
 ...
 ```
+
+## Project Stats
+
+    -------------------------------------------------------------------------------
+    Language                     files          blank        comment           code
+    -------------------------------------------------------------------------------
+    make                             1             37             14            609
+    C++                              2             30             38            196
+    QML                              1              3              0             18
+    Qt Project                       1              4              5              9
+    -------------------------------------------------------------------------------
+    SUM:                             5             74             57            832
+    -------------------------------------------------------------------------------
+
+## License
+
+GPLv3

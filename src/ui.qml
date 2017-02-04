@@ -5,8 +5,8 @@ import QtWebEngine 1.2
 
 Window {
     id: window
-    width: 1100
-    height: 800
+    width: windowWidth
+    height: windowHeight
     visible: true
     title: windowTitle
 
