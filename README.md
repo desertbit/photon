@@ -7,6 +7,8 @@ Useful for Go applications.
 proton http://localhost:8080
 ```
 
+![Demo Preview](preview.png "Preview")
+
 ## Installation
 
 The Qt libraries are required.
