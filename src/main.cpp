@@ -36,6 +36,7 @@ QString getCommandLineUrlArgument()
 int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);
+    app.setAttribute(Qt::AA_EnableHighDpiScaling);
     QtWebEngine::initialize();
 
     const QString url = getCommandLineUrlArgument();
