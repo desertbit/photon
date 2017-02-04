@@ -8,7 +8,7 @@ Window {
     width: 1100
     height: 800
     visible: true
-    title: "Photon"
+    title: windowTitle
 
     WebEngineView {
         id: webEngineView
