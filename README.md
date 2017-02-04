@@ -38,7 +38,7 @@ usage: ./photon [-fullscreen] [-title <title>] [-disableHighDPI] -url <URL>
 
 ## Preview
 
-This is what a simple google maps example would look like:
+This is what a simple OpenStreetMap example would look like:
 
 ![Demo Preview](preview.png "Preview")
 
