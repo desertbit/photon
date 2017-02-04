@@ -1,7 +1,7 @@
 # Photon
 
 Build powerful crossplatform Web Apps. This project is a simple alternative to [Electron](http://electron.atom.io/).
-Useful for Go application.
+Useful for Go applications.
 
 ```
 proton http://localhost:8080
