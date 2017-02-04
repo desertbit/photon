@@ -28,13 +28,17 @@ $ ./photon -url http://localhost:8080
 several commandline options are available:
 
 ```
-usage: ./photon [-fullscreen] [-disableHighDPI] -url <URL>
+usage: ./photon [-fullscreen] [-title <title>] [-disableHighDPI] -url <URL>
     -f | -fullscreen   start in fullscreen mode
     -u | -url          supply URL
     -h | -help         print this help
     -t | -title        set window title
     -disableHighDPI    disable high DPI scaling
 ```
+
+## Preview
+
+This is what a simple google maps example would look like:
 
 ![Demo Preview](preview.png "Preview")
 
