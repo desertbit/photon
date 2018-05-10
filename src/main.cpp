@@ -74,7 +74,7 @@ int main(int argc, char **argv)
                 printf("[ERROR] missing URL value\n");
                 return 1;
             }
-            bool hasHttpPrefix = args[i+1].startsWith("http://");
+            bool hasHttpPrefix = args[i+1].startsWith("http://") || args[i+1].startsWith("https://");
             const bool isValidUrl = QUrl::fromUserInput(args[i+1]).isValid();
             if (!isValidUrl || !hasHttpPrefix) {
                 printf("[ERROR] invalid URL: %s\n", args[i+1].toUtf8().constData());
